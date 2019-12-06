@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scrollable">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Especificaciones generales </title>
+    <script type="text/javascript" src="./connection.js"></script>
+    <script type="text/javascript" src="./paintData.js"></script>
+    <script type="text/javascript" src="./actions.js"></script>
+    	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="photon.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <nav body style="background-color: #000032">
+      .
+  </nav>
+  <h1>REGISTRO DE ESPECIFICACIONES GENERALES </h1>
+  <h1>Ningún valor es obligatorio</h1>
+
+<div id="form">
+  <div class="container">
+      <div class="form-group">
+        <br>
+      <label for="departamento">Departamento</label>
+      <input type="text" id="departamento" class="form-control" id="departamentoo" aria-describedby="emailHelp" placeholder="Nombre del departamento ">
+    </div>
+          </center>
+          </div>
+  <div class="container">
+      <div class="form-group">
+        <br>
+      <label for="depto_ident">Departamento ident</label>
+      <input type="text" id="depto_ident" class="form-control" id="depto_ident"  placeholder="Identificador">
+    </div>
+    <button onclick="save()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+      <div class="form-group">
+        <br>
+      <label for="exampleInputPassword1">Empresa</label>
+      <input type="text" id="empresa" class="form-control" id="exampleInputPassword1" placeholder="empresa">
+    </div>
+    <button onclick="saveempresa()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+    <div class="form-group">
+      <br>
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" class="form-control" id="usuario" placeholder="usuario">
+    </div>
+    <button onclick="saveusuario()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+    <div class="form-group">
+      <br>
+      <label for="exampleInputPassword1">Categoria</label>
+      <input type="text" id="categoria" class="form-control" id="categoria" placeholder="categoria">
+    </div>
+    <button onclick="savecategoria()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+    <div class="form-group">
+      <br>
+      <label for="exampleInputPassword1">Marca</label>
+      <input type="text" id="marca" class="form-control" id="marca" placeholder="marca">
+    </div>
+    <button onclick="savemarca()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+    <div class="form-group">
+      <br>
+      <label for="exampleInputPassword1">Procesador</label>
+      <input type="text" id="procesador" class="form-control" id="procesador" placeholder="procesador">
+    </div>
+    <button onclick="saveprocesador()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+    <div class="form-group">
+      <br>
+      <label for="exampleInputPassword1">Sistema Opertivo</label>
+      <input type="text" id="sistemaoperativo" class="form-control" id="sistemaoperativo" placeholder="sistemaoperativo">
+    </div>
+    <button onclick="savesistemaoperativo()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+    <div class="form-group">
+      <br>
+      <label for="exampleInputPassword1">Ram</label>
+      <input type="text" id="ram" class="form-control" id="ram" placeholder="ram">
+    </div>
+    <button onclick="saveram()" >Guardar</button>
+          </center>
+          </div>
+  <br>
+  <div class="container">
+    <div class="form-group">
+      <br>
+      <label for="discroduro">Disco Duro</label>
+      <input type="text" id="discroduro" class ="form-control" id="discroduro" placeholder="discoduro">
+    </div>
+    <button onclick="savediscroduro()" >Guardar</button>
+          </center>
+          </div>
+  </div>
+  <br>
+<button type="button" onclick="showForm()" >Agregar especificaciones </button>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<table class="table">
+  <br>
+  <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre del departamento </th>
+            <th scope="col">Identificador</th>
+
+        </tr>
+    </thead>
+    <tbody id="content">
+        <tr>
+            <th scope="row">1</th>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Empresa</th>
+  </tr>
+  </thead>
+  <tbody id="contentem">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Usuario</th>
+
+  </tr>
+  </thead>
+  <tbody id="contentuser">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Cateogria</th>
+
+  </tr>
+  </thead>
+  <tbody id="contentcat">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Marca</th>
+
+  </tr>
+  </thead>
+  <tbody id="contentmarca">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Procesador</th>
+
+  </tr>
+  </thead>
+  <tbody id="contentproces">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Sistema Operativo</th>
+
+  </tr>
+  </thead>
+  <tbody id="contentso">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Ram</th>
+  </tr>
+  </thead>
+  <tbody id="contentram">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+<br>
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Disco Duro</th>
+  </tr>
+  </thead>
+  <tbody id="contentdc">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+
+<nav body style="background-color: #000032">
+    .
+</nav>
+<h1>REGISTRO DE UNIDADES </h1>
+<h2>Ingresa unidad</h2>
+
+<div id="form">
+  <div class="container">
+      <div class="form-group">
+        <br>
+      <label for="inventario">Inventario</label>
+      <input type="text" id="inventario" class="form-control" id="inventario" aria-describedby="emailHelp" placeholder="número de inventario">
+    </div>
+          </center>
+          </div>
+          <div class="container">
+              <div class="form-group">
+                <br>
+              <label for="serie">Número de serie</label>
+              <input type="text" id="serie" class="form-control" id="serie" aria-describedby="emailHelp" placeholder="serie">
+            </div>
+                  </center>
+                  </div>
+                  <div class="container">
+                      <div class="form-group">
+                        <br>
+                      <label for="modelos">Modelo</label>
+                      <input type="text" id="modelos" class="form-control" id="modelos" aria-describedby="emailHelp" placeholder="modelo del equipo ">
+                    </div>
+                          </center>
+                          </div>
+  <div class="container">
+      <div class="form-group">
+        <br>
+      <label for="caracteristicas">Características </label>
+      <input type="text" id="caracteristicas" class="form-control" id="caracteristicas"  placeholder="caracteristicas de la unidad ">
+  </div>
+    <button onclick="saveregistro()">Guardar</button>
+          </center>
+          </div>
+  <br>
+</div>
+<br>
+
+
+<br>
+<table class="table">
+<br>
+<thead>
+<tr>
+    <th scope="col">#</th>
+    <th scope="col">inventario</th>
+    <th scope="col">serie</th>
+    <th scope="col">modelo</th>
+    <th scope="col">caracteristicas</th>
+
+</tr>
+</thead>
+<tbody id="contentreg">
+<tr>
+    <th scope="row">1</th>
+</tr>
+</tbody>
+</table>
+<br>
+<h2>Especificaciones generales del equipo </h2>
+<div id="form">
+  <div class="container">
+  <div class="form-group">
+  <br>
+  <label>Departamento:</label>
+  <select id="departamento" name="usuario">
+    <br>
+  <option value="col">#</option>
+  <option value="col">Nombre del departamento </option>
+</div>
+</center>
+</div>
+    </select>
+<div class="container">
+<div class="form-group">
+<br/>
+<label>Empresa:</label>
+<select id="usuario" name="usuario">
+  <br>
+<option value="col">Usuario</option>
+</div>
+</center>
+</div>
+    </select>
+<div class="container">
+<div class="form-group">
+<br/>
+<label>Usuario:</label>
+<select id="categoria" name="categoria">
+  <br>
+
+<option id="categoria">categoria </option>
+</div>
+</center>
+</div>
+    </select>
+    <br/>
+    <label>Categoria:</label>
+    <select id="categoria" name="categoria">
+      <br>
+
+    <option id="categoria">categoria </option>
+    </div>
+    </center>
+    </div>
+        </select>
+        <br/>
+        <label>Marca:</label>
+        <select id="categoria" name="categoria">
+          <br>
+
+        <option id="categoria">categoria </option>
+        </div>
+        </center>
+        </div>
+            </select>
+            <br/>
+            <label>Procesador:</label>
+            <select id="categoria" name="categoria">
+              <br>
+
+            <option id="categoria">categoria </option>
+            </div>
+            </center>
+            </div>
+                </select>
+                <br/>
+                <label>Sistema Operativo:</label>
+                <select id="categoria" name="categoria">
+                  <br>
+
+                <option id="categoria">categoria </option>
+                </div>
+                </center>
+                </div>
+                    </select>
+                    <br/>
+                    <label>Ram:</label>
+                    <select id="categoria" name="categoria">
+                      <br>
+
+                    <option id="categoria">categoria </option>
+                    </div>
+                    </center>
+                    </div>
+                        </select>
+                        <br/>
+                        <label>Disco duro:</label>
+                        <select id="categoria" name="categoria">
+                          <br>
+
+                        <option id="categoria">categoria </option>
+                        </div>
+                        </center>
+                        </div>
+                            </select>
+                            </div>
+                            <button onclick="myFunction()">Imprimir</button>
+  <br>
+
+<br/>
+<nav body style="background-color: #000032">
+    .
+</nav>
+
+<h1>CONTROL DE MANTENIMIENTOS </h1>
+<h2>  Busca la unidad requerida</h2>
+
+
+<div id="form">
+  <div class="container">
+  <div class="form-group">
+  <br>
+  <label>Departamento:</label>
+  <select id="departamento" name="usuario">
+    <br>
+  <option value="col">#</option>
+  <option value="col">Nombre del departamento </option>
+</div>
+</center>
+</div>
+    </select>
+<div class="container">
+<div class="form-group">
+<br>
+<label>Usuario:</label>
+<select id="usuario" name="usuario">
+  <br>
+<option value="col">Usuario</option>
+</div>
+</center>
+</div>
+    </select>
+<div class="container">
+<div class="form-group">
+<br>
+<label>Categoria:</label>
+<select id="categoria" name="categoria">
+  <br>
+
+<option id="categoria">categoria </option>
+</div>
+</center>
+</div>
+    </select>
+  <br>
+<div class="container">
+<div class="form-group">
+        <label>
+            <br /> Ingresa el número de mantenimientos por año de esta unidad</label>
+    </div>
+
+    <input id="mxa" type="number" min="1" max="12" step="1" value="1" />
+
+  </center>
+  </div>
+  <div class="container">
+    <div class="form-group">
+        <br />
+        <label>Ingresa la fecha de los ultimos mantenimientos registrados </label>
+        <br />
+        <label>Fecha último mantenimiento: </label>
+    </center>
+    </div>
+    <input id="proxm" type="date" name="fecha">
+  </center>
+  </div>
+    <div class="container">
+    <div class="form-group">
+        <br />
+        <label>Fecha próximo mantenimiento </label>
+    </center>
+    </div>
+    <input id="um6" type="date" name="fecha">
+  </center>
+  </div>
+    <div class="container">
+    <div class="form-group">
+        <br />
+        <label>Fecha mantenimiento </label>
+    </div>
+    <input id="um5" type="date" name="fecha">
+  </center>
+  </div>
+    <div class="container">
+    <div class="form-group">
+        <br />
+        <label>Fecha mantenimiento </label>
+    </div>
+    <input id="um4" type="date" name="fecha">
+  </center>
+  </div>
+    <div class="container">
+    <div class="form-group">
+        <br />
+        <label>Fecha mantenimiento </label>
+    </div>
+    <input id="um3" type="date" name="fecha">
+  </center>
+  </div>
+      <div class="container">
+      <div class="form-group">
+        <br />
+        <label>Fecha mantenimiento </label>
+    </div>
+    <input id="um2" type="date" name="fecha">
+  </center>
+  </div>
+    <div class="container">
+    <div class="form-group">
+        <br />
+        <label>Fecha mantenimiento </label>
+    </div>
+    <input id="um1" type="date" name="fecha">
+  </center>
+  </div>
+    </div>
+<br />
+<br />
+<button onclick="myFunction()">Imprimir reporte</button>
+<br />
+<br />
+<script>
+function myFunction() {
+window.print();
+}
+</script>
+
+
+<script>
+document.getElementById("form").style.display = "none";
+// Get the mysql service
+paintFirstTenRows();
+ </script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>let $ = require('jquery');</script>
+<script>require('bootstrap');</script>
+
+
+
+</body>
+
+</html>
