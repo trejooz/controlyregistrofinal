@@ -1,0 +1,66 @@
+
+.scrollable {
+  overflow: scroll;
+  height: 100%;
+}
+h1{
+  font-family: sans-serif;
+  color: #000032;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.mainWrapper{
+    margin: 50px;
+}
+
+h2{
+  font-family: sans-serif;
+  color: #000032;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+h3{
+  font-family: sans-serif;
+  color: #000032;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+h4{
+  font-family: sans-serif;
+  color: #000032;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+h5 {
+  font-weight: bold;
+
+}
+
+
+img {
+  width: 300px;
+  height: 200px;
+
+}
+
+button{
+  background-color:#000032;
+  color: white;
+}
+label {
+    font-weight: bold;
+}
+
+
+
+select {
+width: 100%;
+padding: 16px 20px;
+border: none;
+border-radius: 4px;
+background-color: #f1f1f1;
+}
